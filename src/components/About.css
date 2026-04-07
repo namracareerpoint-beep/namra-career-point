@@ -1,0 +1,80 @@
+.about-section {
+  background-color: var(--bg-light);
+  margin-top: -60px; /* Pull features up to overlap hero slightly */
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 10;
+}
+
+.feature-card {
+  padding: 40px 30px;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.primary-bg {
+  background-color: var(--primary);
+}
+
+.dark-bg {
+  background-color: #333;
+}
+
+.who-we-are {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.who-we-are-text {
+  flex: 1;
+}
+
+.who-we-are-text p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: var(--text-dark);
+}
+
+.who-we-are-image {
+  flex: 1;
+}
+
+.who-we-are-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .who-we-are {
+    flex-direction: column;
+  }
+}
